@@ -258,12 +258,13 @@ data:
       disable_retry_limit
       # Use multiple threads for processing.
       num_threads 2
-      use_grpc true
+      # use_grpc true
       # Skip timestamp adjustment as this is in a controlled environment with
       # known timestamp format. This helps with CPU usage.
       adjust_invalid_timestamps false
 
       # My changes
+      use_grpc false
       project_id munchie-logs
     </match>
 
@@ -298,12 +299,13 @@ data:
       max_retry_wait 30
       disable_retry_limit
       num_threads 2
-      use_grpc true
+      # use_grpc true
       # Skip timestamp adjustment as this is in a controlled environment with
       # known timestamp format. This helps with CPU usage.
       adjust_invalid_timestamps false
 
       # My changes
+      use_grpc false
       project_id munchie-logs
     </match>
   system.input.conf: |-
